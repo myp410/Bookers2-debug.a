@@ -20,7 +20,7 @@
 　
 <div class='row'>
   <% if current_user != user %>
-    <td><%= render "relationships/btn", user: user, isRoom: isRoom, room: room, roomId: roomId, entry: entry, options: { class: ""} %></td>
+    <td><%= render "relationships/btn", user: user, options: { class: ""} %></td>
   <% else %>  
     <%= link_to edit_user_path(user), class: "btn btn-outline-secondary btn-block" do %>
       <i class="fas fa-user-cog"></i>

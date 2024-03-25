@@ -1,6 +1,6 @@
 class RoomsController < ApplicationController
   before_action :authenticate_user!
-  before_acrion :reject_non_related, only: [:show]
+  before_action :reject_non_related, only: [:show]
   
   def create
     @room = Room.create

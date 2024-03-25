@@ -18,12 +18,12 @@ class UsersController < ApplicationController
           end
         end
       end
-      if @isRoom
-      else
-        @room = Room.new
-        @entry = Entry.new
-      end
-    end  
+        if @isRoom
+        else
+          @room = Room.new
+          @entry = Entry.new
+        end
+      end  
   end
 
   def index
