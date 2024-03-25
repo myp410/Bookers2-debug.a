@@ -22,6 +22,8 @@ class User < ApplicationRecord
   has_many :messages, dependent: :destroy
   has_many :rooms, through: :entries
   
+  has_many :read_counts, dependent: :destroy
+  
   def follow(user)
     active_relationships.create(followed_id: user.id)
   end
